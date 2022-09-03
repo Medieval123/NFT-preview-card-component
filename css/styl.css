@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+@media (min-width: 1200px) {
+  main {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  main .card {
+    width: 20%;
+  }
+  main .card > img {
+    width: 100%;
+  }
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 2em;
+  background-color: hsl(217deg, 54%, 11%);
+}
+main .card {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2em;
+  padding-right: 2em;
+  max-width: 400px;
+  width: 70%;
+  margin: auto;
+  background-color: hsl(216deg, 50%, 16%);
+  font-family: "Outfit", sans-serif;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.815);
+  position: relative;
+}
+main .card .card_img > img {
+  width: 100%;
+  margin: auto;
+  padding-top: 2em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main .card .card_img:hover > :first-child {
+  filter: opacity(0.5) brightness(5) grayscale(0.5);
+}
+main .card .card_img:hover > .view-icon {
+  display: block;
+}
+main .card .card_img .view-icon {
+  display: none;
+  position: absolute;
+  width: 40px;
+  left: 45%;
+  top: 20%;
+}
+main .card .card_header {
+  display: block;
+}
+main .card .card_header h1 {
+  display: block;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #fff;
+}
+main .card .card_header p {
+  display: block;
+  font-weight: 300;
+  font-size: 1rem;
+  color: hsl(215deg, 51%, 70%);
+  line-height: 1.5;
+}
+main .card .card_body {
+  display: flex;
+  flex-direction: row;
+}
+main .card .card_body p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  color: hsl(178deg, 100%, 50%);
+}
+main .card .card_body p span {
+  padding: 0.5em;
+}
+main .card .card_body p:last-child {
+  font-weight: 300;
+  justify-content: flex-end;
+  color: hsla(178deg, 100%, 50%, 0.7);
+}
+main .card .card_footer {
+  display: block;
+}
+main .card .card_footer p {
+  display: flex;
+  align-items: center;
+}
+main .card .card_footer p img {
+  width: 15%;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+main .card .card_footer p span {
+  padding: 1em;
+  color: hsl(215deg, 51%, 70%);
+}
+main .card .card_footer p span a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*# sourceMappingURL=styles.css.map */
